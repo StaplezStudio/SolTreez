@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soltree</title>
+    <script>
+        // GitHub Pages SPA redirect
+        const path = window.location.pathname.replace('/Soltree', '');
+        if (path && path !== '/') {
+            window.location.replace('/Soltree/create.html' + window.location.search + window.location.hash);
+        } else {
+            window.location.replace('/Soltree/' + window.location.search + window.location.hash);
+        }
+    </script>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif;">
+        <div style="text-align: center;">
+            <h2>Redirecting...</h2>
+            <p>If you're not redirected, <a href="/Soltree/">click here</a></p>
+        </div>
+    </div>
+</body>
+</html>

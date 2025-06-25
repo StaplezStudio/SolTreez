@@ -1,0 +1,145 @@
+How to Deploy Soltree React App to GitHub Pages
+=================================================
+
+This guide will help you deploy the complete Soltree application to GitHub Pages with proper routing support.
+
+OVERVIEW
+--------
+The project includes a React SPA (Single Page Application) with static file fallbacks for GitHub Pages compatibility. The deployment automatically handles routing issues common with SPAs on static hosting.
+
+WHAT'S INCLUDED
+---------------
+✓ Professional landing page (index.html)
+✓ React application entry point (create.html)
+✓ 404.html for SPA routing support
+✓ GitHub Actions deployment workflow
+✓ Git conflict resolution instructions
+✓ Complete source code and dependencies
+
+DEPLOYMENT STEPS
+================
+
+OPTION 1: Upload to Existing Repository
+---------------------------------------
+If you already have a GitHub repository:
+
+1. Download and extract "project new.zip"
+
+2. Navigate to your local repository folder
+
+3. Copy all extracted files to your repository folder
+   (Replace existing files when prompted)
+
+4. Commit and push changes:
+   ```
+   git add .
+   git commit -m "Deploy Soltree React app with GitHub Pages support"
+   git push origin main
+   ```
+
+   If you get a "fetch first" error:
+   ```
+   git push origin main --force
+   ```
+
+OPTION 2: Create New Repository
+-------------------------------
+1. Create a new repository on GitHub
+   - Go to github.com/new
+   - Name it "Soltree" or your preferred name
+   - Make it public
+   - Don't initialize with README, .gitignore, or license
+
+2. Download and extract "project new.zip"
+
+3. Initialize local Git repository:
+   ```
+   cd extracted-folder
+   git init
+   git add .
+   git commit -m "Initial commit: Soltree React app"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git push -u origin main
+   ```
+
+   Replace YOUR_USERNAME and YOUR_REPO_NAME with your actual values.
+
+ENABLE GITHUB PAGES
+===================
+1. Go to your repository on GitHub
+2. Click "Settings" tab
+3. Scroll down to "Pages" section
+4. Under "Source", select "GitHub Actions"
+5. The deployment workflow will automatically trigger
+
+The workflow file (.github/workflows/deploy.yml) is already included and configured.
+
+VERIFY DEPLOYMENT
+================
+After the GitHub Actions workflow completes:
+
+1. Landing page: https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/
+2. React app: https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/create.html
+
+Both URLs should load correctly with full functionality.
+
+TROUBLESHOOTING
+===============
+
+Problem: GitHub Actions workflow fails
+Solution: Check the "Actions" tab in your repository for error details
+
+Problem: 404 error when accessing /create
+Solution: Use create.html instead - the routing is set up this way for GitHub Pages compatibility
+
+Problem: React app shows blank page
+Solution: Check browser console for errors. Ensure all asset paths are correct.
+
+Problem: Wallet connections not working
+Solution: This is expected behavior. Wallet connections require custom RPC endpoints and work best when deployed with HTTPS.
+
+Problem: Git push rejected
+Solution: Use `git push origin main --force` for initial setup
+
+IMPORTANT NOTES
+===============
+• The app uses localStorage for configurations (no database required)
+• Wallet functionality works best with custom RPC endpoints
+• Mobile compatibility is built-in
+• All routing is handled through static files for GitHub Pages compatibility
+• The deployment automatically builds and optimizes the React app
+
+UPDATING THE APP
+================
+To update your deployed app:
+
+1. Make changes to source code
+2. Commit and push to main branch:
+   ```
+   git add .
+   git commit -m "Update: description of changes"
+   git push origin main
+   ```
+3. GitHub Actions will automatically rebuild and deploy
+
+CUSTOM DOMAIN (OPTIONAL)
+========================
+To use a custom domain:
+
+1. In repository Settings > Pages
+2. Add your custom domain under "Custom domain"
+3. Enable "Enforce HTTPS"
+4. Configure DNS records with your domain provider
+
+For more details, see GitHub's custom domain documentation.
+
+SUPPORT
+=======
+If you encounter issues:
+1. Check the GitHub Actions logs in your repository
+2. Verify all files were uploaded correctly
+3. Ensure GitHub Pages is enabled in repository settings
+4. Check browser console for JavaScript errors
+
+The app is now ready for production use on GitHub Pages with full Solana wallet integration and Merkle tree creation capabilities.

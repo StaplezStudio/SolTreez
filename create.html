@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Soltree - Create Merkle Tree</title>
+    <meta name="description" content="Create compressed Merkle trees on Solana blockchain with wallet support and real-time cost estimation">
+    <script>
+        // Handle GitHub Pages SPA routing
+        (function() {
+            const redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect !== location.href) {
+                history.replaceState(null, null, redirect);
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <link rel="stylesheet" href="./assets/index.css">
+    <script type="module" src="./assets/index.js"></script>
+</body>
+</html>
