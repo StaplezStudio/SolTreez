@@ -105,3 +105,26 @@ For issues and questions:
 ---
 
 Built with ❤️ for the Solana ecosystem
+
+# Project Title
+
+Brief description of your project.
+
+## Getting Started
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/your-repo.git
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Run the project:
+   ```
+   npm start
+   ```
+
+## License
+
+Specify your license here.
