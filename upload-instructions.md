@@ -4,26 +4,27 @@ Since git operations are restricted in this environment, here are the steps to u
 
 ## Method 1: Using the Archive Feature (Recommended)
 
-1. **Create Archive**: Click the "Archive Source Code" button in your Soltree app
-2. **Check Archive**: The zip file will be saved in the `rar/` folder in your project
-3. **Download from Replit**: Use the Files panel menu (⋯) to download the entire project as zip
+1. **Create Archive**: Click the "Archive Source Code" button in your Soltree app.
+2. **Check Archive**: The zip file will be saved in the `rar/` folder in your project.
+3. **Download from Replit**: Use the Files panel menu (⋯) to download the entire project as zip.
 4. **Extract and Upload to GitHub**:
-   - Extract the downloaded zip on your computer
+   - Extract the downloaded zip on your computer.
    - Go to https://github.com/StaplezStudio/Soltree
-   - Click "uploading an existing file"
-   - Drag and drop all project files (exclude `node_modules`, `.replit`, `replit.nix`)
-   - Commit with message: "Initial commit: Soltree - Solana Merkle Tree Creator"
+   - Click "Add file" > "Upload files".
+   - Drag and drop all project files (exclude `node_modules`, `.replit`, `replit.nix`, and `.git` if present).
+   - Commit with message: "Initial commit: Soltree - Solana Merkle Tree Creator".
 
 ## Method 2: Manual Download from Replit
 
 1. **Download Project**:
-   - In Replit, click Files panel menu (⋯)
-   - Select "Download as zip"
-   - Extract files on your computer
+   - In Replit, click Files panel menu (⋯).
+   - Select "Download as zip".
+   - Extract files on your computer.
 
 2. **Upload to GitHub**:
    - Go to https://github.com/StaplezStudio/Soltree
-   - Upload all extracted files (exclude `.replit`, `replit.nix`, `node_modules`)
+   - Click "Add file" > "Upload files".
+   - Upload all extracted files (exclude `.replit`, `replit.nix`, `node_modules`, and `.git` if present).
 
 ## Method 3: Using Git Locally (if available)
 

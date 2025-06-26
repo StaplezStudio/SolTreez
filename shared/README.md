@@ -37,8 +37,8 @@ The following files are excluded from archives to reduce size:
 1. Extract the archive: `unzip soltree-complete-[timestamp].zip`
 2. Navigate to project: `cd workspace/`
 3. Install dependencies: `npm install`
-4. Set up environment variables (DATABASE_URL, etc.)
-5. Push database schema: `npm run db:push`
+4. Set up environment variables (DATABASE_URL, etc.) if using backend/database features
+5. Push database schema: `npm run db:push` (only if using PostgreSQL/Drizzle ORM)
 6. Run the application: `npm run dev`
 
 ## Project Details

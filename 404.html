@@ -6,11 +6,13 @@
     <title>Soltree</title>
     <script>
         // GitHub Pages SPA redirect
-        const path = window.location.pathname.replace('/Soltree', '');
-        if (path && path !== '/') {
-            window.location.replace('/Soltree/create.html' + window.location.search + window.location.hash);
+        // This assumes your repo is named "Soltree". Change "/Soltree" if your repo name is different.
+        const repo = "Soltree";
+        const path = window.location.pathname.replace(`/${repo}`, "");
+        if (path && path !== "/") {
+            window.location.replace(`/${repo}/create.html` + window.location.search + window.location.hash);
         } else {
-            window.location.replace('/Soltree/' + window.location.search + window.location.hash);
+            window.location.replace(`/${repo}/` + window.location.search + window.location.hash);
         }
     </script>
 </head>

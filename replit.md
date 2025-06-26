@@ -111,10 +111,10 @@ The application is configured for deployment on Replit with autoscaling capabili
 
 ## User Preferences
 
-Preferred communication style: Simple, everyday language.
-Max depth minimum: 5 (safety requirement)
-Mobile compatibility: Required for preview mode functionality
-Wallet adapters: Must work in Replit preview environment
-RPC requirement: Custom RPC endpoints required for reliable Merkle tree creation
-Data preference: Use on-chain data instead of database for tree discovery
+Preferred communication style: Simple, everyday language.  
+Max depth minimum: 5 (safety requirement)  
+Mobile compatibility: Required for preview mode functionality  
+Wallet adapters: Must work in Replit preview environment  
+RPC requirement: Custom RPC endpoints required for reliable Merkle tree creation  
+Data preference: Use on-chain data instead of database for tree discovery  
 Storage preference: No database - use localStorage for configurations only

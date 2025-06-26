@@ -87,27 +87,27 @@ Both URLs should load correctly with full functionality.
 TROUBLESHOOTING
 ===============
 
-Problem: GitHub Actions workflow fails
+Problem: GitHub Actions workflow fails  
 Solution: Check the "Actions" tab in your repository for error details
 
-Problem: 404 error when accessing /create
+Problem: 404 error when accessing /create  
 Solution: Use create.html instead - the routing is set up this way for GitHub Pages compatibility
 
-Problem: React app shows blank page
+Problem: React app shows blank page  
 Solution: Check browser console for errors. Ensure all asset paths are correct.
 
-Problem: Wallet connections not working
+Problem: Wallet connections not working  
 Solution: This is expected behavior. Wallet connections require custom RPC endpoints and work best when deployed with HTTPS.
 
-Problem: Git push rejected
+Problem: Git push rejected  
 Solution: Use `git push origin main --force` for initial setup
 
 IMPORTANT NOTES
 ===============
-• The app uses localStorage for configurations (no database required)
-• Wallet functionality works best with custom RPC endpoints
-• Mobile compatibility is built-in
-• All routing is handled through static files for GitHub Pages compatibility
+• The app uses localStorage for configurations (no database required)  
+• Wallet functionality works best with custom RPC endpoints  
+• Mobile compatibility is built-in  
+• All routing is handled through static files for GitHub Pages compatibility  
 • The deployment automatically builds and optimizes the React app
 
 UPDATING THE APP

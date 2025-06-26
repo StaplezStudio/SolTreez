@@ -7,8 +7,8 @@
 3. **IMPORTANT: Remove node_modules first**:
    ```bash
    # Windows
-   rmdir /s node_modules
-   
+   rmdir /s /q node_modules
+
    # Mac/Linux  
    rm -rf node_modules
    ```
@@ -99,7 +99,7 @@ Your project needs to be built for GitHub Pages. Add this to your `package.json`
 Since this is a full-stack app, you'll need to:
 
 1. **Build the client** for static hosting
-2. **Configure base path** in `vite.config.ts`
+2. **Configure base path** in `vite.config.ts` if your repo is not at the root of your GitHub Pages site
 3. **Handle routing** for single-page application
 
 ## Important Notes
@@ -120,7 +120,7 @@ rm -rf .git
 git init
 
 # Delete node_modules
-rmdir /s node_modules  # Windows
+rmdir /s /q node_modules  # Windows
 # or: rm -rf node_modules  # Mac/Linux
 
 # Now add files properly

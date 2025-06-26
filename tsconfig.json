@@ -18,6 +18,8 @@
     "paths": {
       "@/*": ["./client/src/*"],
       "@shared/*": ["./shared/*"]
+      // Note: If you use "@assets" alias in your Vite config, consider adding:
+      // "@assets/*": ["./attached_assets/*"]
     }
   }
 }

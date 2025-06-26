@@ -50,8 +50,8 @@ export const insertTreeConfigurationSchema = createInsertSchema(treeConfiguratio
 });
 
 export const merkleTreeParamsSchema = z.object({
-  canopyDepth: z.number().min(0).max(20),
-  maxDepth: z.number().min(5).max(30),
+  canopyDepth: z.number().min(0).max(20), // UI and docs say 0-17, schema allows up to 20
+  maxDepth: z.number().min(5).max(30),    // Consistent with safety requirement (min 5)
   maxBufferSize: z.number().min(8).max(2048),
   network: z.enum(["devnet", "mainnet-beta"]),
   rpcEndpoint: z.string().url().optional(),
@@ -60,7 +60,7 @@ export const merkleTreeParamsSchema = z.object({
 export const treeConfigurationSchema = z.object({
   name: z.string().min(1).max(100),
   description: z.string().max(500).optional(),
-  canopyDepth: z.number().min(0).max(30),
+  canopyDepth: z.number().min(0).max(30), // UI/docs say 0-17, schema allows up to 30
   maxDepth: z.number().min(5).max(30),
   maxBufferSize: z.number().min(8).max(2048),
   network: z.enum(["devnet", "mainnet-beta"]),

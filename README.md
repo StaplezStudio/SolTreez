@@ -15,7 +15,7 @@ A modern web application for creating and managing Solana compressed Merkle tree
 
 ## 🚀 Live Demo
 
-- **GitHub Pages**: [https://YOUR_USERNAME.github.io/soltree](https://YOUR_USERNAME.github.io/soltree)
+- **GitHub Pages**: [https://StaplezStudio.github.io/Soltree](https://StaplezStudio.github.io/Soltree)
 - **Replit**: [Your Replit URL]
 
 ## 🛠️ Technology Stack
@@ -105,26 +105,3 @@ For issues and questions:
 ---
 
 Built with ❤️ for the Solana ecosystem
-
-# Project Title
-
-Brief description of your project.
-
-## Getting Started
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/your-username/your-repo.git
-   ```
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Run the project:
-   ```
-   npm start
-   ```
-
-## License
-
-Specify your license here.
